@@ -1,4 +1,4 @@
-package com.clearview.Stationskurve;
+package com.clearview.stationskurve;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

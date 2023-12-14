@@ -1,0 +1,24 @@
+Zu-/Abgänge
+Betten-/Zimmerbelegung
+Aufnahme
+Verlegung
+Entlassung
+Operationen
+OP-Monitor
+Dokumente
+Patienten
+
+Patienten:
+- Beschwerden (Symptome, Intensität, Häufigkeit)
+- Medikamente (Welche, wann, in welcher Dosis)
+- Vorerkrankungen (welche, wann, operiert?)
+- Gesundheitliche Vorbelastungen in der Familie (Diabetes, Herzinfark, Krebs, ..)
+- Akute Stresssituation? (Im Job, familiär, anderweitig)
+- Genussmittelgebrauch (Alkhohol, Nikotin, andere Drogen, wie häufig und in welchem Umfang)
+
+- Körpergröße/Gewicht
+- Blutdruck
+- Herz/Lunge Abhorchen
+- Laboruntersuchung (Blut, Urin, Stuhl)
+- Körpertermperatur
+- EKG in Ruhe/Belastung

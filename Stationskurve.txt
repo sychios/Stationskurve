@@ -1,12 +1,40 @@
-Zu-/Abgänge
-Betten-/Zimmerbelegung
-Aufnahme
-Verlegung
-Entlassung
-Operationen
-OP-Monitor
-Dokumente
+Monitor
+    - Mini-Übersicht Betten
+    - Heutiger Oberarzt
+    - Aktuelle Infos
+        - allg.
+        - Vorfälle von der Vorschicht
+        - (Geburtstage von Patienten/)
+    - Personalinfo: Krank, Urlaub
+
+Zimmer
+    - Dropdown
+    - Septisch
+    - Normal
+    - Timeline (wie lange Patienten da, wann Ankömmlinge, ..)
+
 Patienten
+    - geplante Aufnahmen/Entlassungen
+    - Notaufnahmen
+    - Patientenliste
+        - sortierbar: Nachname, Zimmer, ..
+        - OnClick:
+            - Detailansicht Person
+                - Stammdaten
+                - Kurve (Medikamente, Essen, OP, ...)
+
+OP-Monitor
+    - single row, two columns: Anstehende OPs, aktuelle OPs (, OP verlassen)
+    - ALERT -> P noch nicht
+    - OP-Übersicht
+
+Dokumente
+    - Patientenstammblatt
+    - Übergabezettel
+    - Aufnahme, Entlassung, Verlegung
+    - Info
+
+
 
 Patienten:
 - Beschwerden (Symptome, Intensität, Häufigkeit)

@@ -4,23 +4,71 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
+
+    <!-- ALWAYS import as first css! -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <!-- CDN import only way to make dropdown in menu work. Why? -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+            integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </head>
 <body>
-<h1>Hello, world!</h1>
+    <!-- header, including the name, a clock and an alert window -->
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-6">
+                    <div class="row">
+                        <div class="col">
+                            <div class="p-2 border">
+                                <h2>
+                                    Stationskurve (St. 2)
+                                </h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col gy-4 text-center">
+                            <div class="p-2 border">mm:ss - dd.MM.YYYY</div>
+                        </div>
+                    </div>
+                </div>
+                <div id="alerts" class="col-6 border text-center">
+                    <div>
+                        Alerts
+                    </div>
+                </div>
+            </div>
+        </div>
 
-<div class="dropdown">
-    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-        Dropdown button
-    </button>
-    <ul class="dropdown-menu">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-    </ul>
-</div>
+        <br/>
+
+        <!-- Tab navigation menu -->
+        <!--
+            aria-current = "page" ?
+
+        -->
+        <nav class="nav nav-tabs">
+            <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#monitor" tabindex="0" href="#">Monitor</a>
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" tabindex="2" href="#" role="button" aria-expanded="false">Zimmer</a>
+            <ul class="dropdown-menu">
+                <!-- Im Dropdown: leere Zimmer lowlighten und mit divider trennen -->
+                <li><a class="dropdown-item" href="#">Zimmer 1</a></li>
+                <li><a class="dropdown-item" href="#">Zimmer 2</a></li>
+                <li><a class="dropdown-item" href="#">Zimmer 3</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Zimmer 4</a></li>
+            </ul>
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#patienten" tabindex="1" href="#">Patienten</a>
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#opmonitor" tabindex="3" href="#">OP-Monitor</a>
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#dokumente" tabindex="4" href="#">Dokumente</a>
+            <a class="nav-link disabled" data-bs-toggle="tab" data-bs-target="#privat" tabindex="-1" aria-disabled="true"  href="#">Privat</a>
+        </nav>
+    </header>
+
+    <main>
+    </main>
 </body>
 </html>

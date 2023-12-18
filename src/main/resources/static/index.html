@@ -72,11 +72,11 @@
             - Dokumente
          -->
         <nav class="nav nav-tabs">
-            <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#monitor" tabindex="0" href="#">Monitor</a>
+            <a class="nav-link active" data-bs-toggle="tab" data-bs-target="#stations-monitor" tabindex="0" href="#">Monitor</a>
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" tabindex="2" href="#" role="button" aria-expanded="false">Zimmer</a>
             <ul class="dropdown-menu">
                 <!-- Im Dropdown: leere Zimmer lowlighten und mit divider trennen -->
-                <li><a class="dropdown-item" href="#">Zimmer 1</a></li>
+                <li><a class="dropdown-item" role="button" data-bs-target="#zimmer1" href="#">Zimmer 1</a></li>
                 <li><a class="dropdown-item" href="#">Zimmer 2</a></li>
                 <li><a class="dropdown-item" href="#">Zimmer 3</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -93,16 +93,52 @@
     <main>
         <!-- Tabs -->
         <div class="tab-content">
-            <div class="tab-pane fade show active" id="monitor" role="tabpanel">
-                <div class="target">
-                    <script src="import.js"></script>
-                </div>
-
-                <div><br/>Abstandshalter<br/></div>
-
+            <!-- Allg. Monitor -->
+            <div class="tab-pane fade show active" id="stations-monitor" role="tabpanel">
                 <div class="container">
-                    <div id="loadGreeting">Hier ist ein: </div>
-                    <button hx-post="/greet" hx-target="#loadGreeting" >Click to load.</button>
+                    <div>Monitor</div>
+                </div>
+            </div>
+
+            <!-- Zimmer -->
+            <div class="tab-pane fade" id="zimmer1" role="tabpanel">
+                <div class="container">
+                    <div>Zimmer 1</div>
+                </div>
+            </div>
+
+            <!-- Patienten -->
+            <div class="tab-pane fade show" id="patienten" role="tabpanel">
+                <div class="container">
+                    <div>Patienten</div>
+                </div>
+            </div>
+
+            <!-- OP-Monitor -->
+            <div class="tab-pane fade show" id="opmonitor" role="tabpanel">
+                <div class="container">
+                    <div>OP-Monitor</div>
+                </div>
+            </div>
+
+            <!-- Personal -->
+            <div class="tab-pane fade show" id="personal" role="tabpanel">
+                <div class="container">
+                    <div>Personal</div>
+                </div>
+            </div>
+
+            <!-- Dokumente -->
+            <div class="tab-pane fade show" id="dokumente" role="tabpanel">
+                <div class="container">
+                    <div>Dokumente</div>
+                </div>
+            </div>
+
+            <!-- Privat -->
+            <div class="tab-pane fade show" id="privat" role="tabpanel">
+                <div class="container">
+                    <div>Mein KeePass2-Master-Passwort ist: "#Bruno74"</div>
                 </div>
             </div>
         </div>

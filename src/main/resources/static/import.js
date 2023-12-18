@@ -1,5 +1,5 @@
 const targetElem = document.querySelector('.target')
-fetch("./monitor.html")
+fetch('./stationsmonitorTAB.html')
 .then(res => res.text())
 .then(data => {
     targetElem.innerHTML=data

@@ -42,7 +42,14 @@
                     </div>
                     <div class="row">
                         <div class="col gy-4 text-center">
-                            <div class="p-2 border">mm:ss - dd.MM.YYYY</div>
+                            <div class="p-2 border">
+                                HH:mm:ss
+                            </div>
+                        </div>
+                        <div class="col gy-4 text-center">
+                            <div class="p-2 border">
+                                dd.MM.YYYY
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -76,7 +83,7 @@
             <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" tabindex="2" href="#" role="button" aria-expanded="false">Zimmer</a>
             <ul class="dropdown-menu">
                 <!-- Im Dropdown: leere Zimmer lowlighten und mit divider trennen -->
-                <li><a class="dropdown-item" role="button" data-bs-target="#zimmer1" href="#">Zimmer 1</a></li>
+                <li><a class="dropdown-item btn-primary" role="button" data-bs-target="#zimmer1" href="#zimmer1">Zimmer 1</a></li>
                 <li><a class="dropdown-item" href="#">Zimmer 2</a></li>
                 <li><a class="dropdown-item" href="#">Zimmer 3</a></li>
                 <li><hr class="dropdown-divider"></li>
@@ -87,6 +94,7 @@
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#personal" tabindex="3" href="#">Personal</a>
             <a class="nav-link" data-bs-toggle="tab" data-bs-target="#dokumente" tabindex="4" href="#">Dokumente</a>
             <a class="nav-link disabled" data-bs-toggle="tab" data-bs-target="#privat" tabindex="-1" aria-disabled="true"  href="#">Privat</a>
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#test" tabindex="4" href="#">Test</a>
         </nav>
     </header>
 
@@ -139,6 +147,71 @@
             <div class="tab-pane fade show" id="privat" role="tabpanel">
                 <div class="container">
                     <div>Mein KeePass2-Master-Passwort ist: "#Bruno74"</div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade show" id="test" role="tabpanel">
+                <div class="container">
+                    <div>Test</div>
+                    <button type="button" class="btn btn-primary">Primary</button>
+                    <button type="button" class="btn btn-secondary">Secondary</button>
+                    <button type="button" class="btn btn-success">Success</button>
+                    <button type="button" class="btn btn-danger">Danger</button>
+                    <button type="button" class="btn btn-warning">Warning</button>
+                    <button type="button" class="btn btn-info">Info</button>
+                    <button type="button" class="btn btn-light">Light</button>
+                    <button type="button" class="btn btn-dark">Dark</button>
+                    <button type="button" class="btn btn-link">Link</button>
+                </div>
+
+                <div class="container">
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                    <button type="button" class="btn btn-outline-success">Success</button>
+                    <button type="button" class="btn btn-outline-danger">Danger</button>
+                    <button type="button" class="btn btn-outline-warning">Warning</button>
+                    <button type="button" class="btn btn-outline-info">Info</button>
+                    <button type="button" class="btn btn-outline-light">Light</button>
+                    <button type="button" class="btn btn-outline-dark">Dark</button>
+                </div>
+
+                <div class="container">
+                    <div class="row">
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="https://picsum.photos/800/600"
+                                     class="card-img-top"
+                                     alt="..."/>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card Title</h5>
+                                    <p class="card-text">
+                                        Here is text, which contains symbols from the alphabet, commas and spacing characters, as well as a dot after this sentence.
+                                    </p>
+                                    <nav class="nav">
+                                        <a class="btn btn-primary" data-bs-toggle="tab" data-bs-target="#dokumente" href="#">Dokumente</a>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="card w-50">
+                            <img src="https://picsum.photos/600/400"
+                                 class="card-img-top"
+                                 alt="..."/>
+                            <div class="card-body">
+                                <h5 class="card-title">Card Title</h5>
+                                <p class="card-text">
+                                    Here is text, which contains symbols from the alphabet, commas and spacing characters, as well as a dot after this sentence.
+                                </p>
+                                <nav class="nav">
+                                    <a class="btn btn-primary" data-bs-toggle="tab" data-bs-target="#dokumente" href="#">Dokumente</a>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

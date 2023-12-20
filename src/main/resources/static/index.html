@@ -151,64 +151,149 @@
             </div>
 
             <div class="tab-pane fade show" id="test" role="tabpanel">
-                <div class="container">
-                    <div>Test</div>
-                    <button type="button" class="btn btn-primary">Primary</button>
-                    <button type="button" class="btn btn-secondary">Secondary</button>
-                    <button type="button" class="btn btn-success">Success</button>
-                    <button type="button" class="btn btn-danger">Danger</button>
-                    <button type="button" class="btn btn-warning">Warning</button>
-                    <button type="button" class="btn btn-info">Info</button>
-                    <button type="button" class="btn btn-light">Light</button>
-                    <button type="button" class="btn btn-dark">Dark</button>
-                    <button type="button" class="btn btn-link">Link</button>
+                <div class="row">
+                    <div class="container">
+                        <div>Test</div>
+                        <button type="button" class="btn btn-primary">Primary</button>
+                        <button type="button" class="btn btn-secondary">Secondary</button>
+                        <button type="button" class="btn btn-success">Success</button>
+                        <button type="button" class="btn btn-danger">Danger</button>
+                        <button type="button" class="btn btn-warning">Warning</button>
+                        <button type="button" class="btn btn-info">Info</button>
+                        <button type="button" class="btn btn-light">Light</button>
+                        <button type="button" class="btn btn-dark">Dark</button>
+                        <button type="button" class="btn btn-link">Link</button>
+                    </div>
+
+                    <div class="container">
+                        <button type="button" class="btn btn-outline-primary">Primary</button>
+                        <button type="button" class="btn btn-outline-secondary">Secondary</button>
+                        <button type="button" class="btn btn-outline-success">Success</button>
+                        <button type="button" class="btn btn-outline-danger">Danger</button>
+                        <button type="button" class="btn btn-outline-warning">Warning</button>
+                        <button type="button" class="btn btn-outline-info">Info</button>
+                        <button type="button" class="btn btn-outline-light">Light</button>
+                        <button type="button" class="btn btn-outline-dark">Dark</button>
+                    </div>
                 </div>
 
-                <div class="container">
-                    <button type="button" class="btn btn-outline-primary">Primary</button>
-                    <button type="button" class="btn btn-outline-secondary">Secondary</button>
-                    <button type="button" class="btn btn-outline-success">Success</button>
-                    <button type="button" class="btn btn-outline-danger">Danger</button>
-                    <button type="button" class="btn btn-outline-warning">Warning</button>
-                    <button type="button" class="btn btn-outline-info">Info</button>
-                    <button type="button" class="btn btn-outline-light">Light</button>
-                    <button type="button" class="btn btn-outline-dark">Dark</button>
-                </div>
-
+                <!-- 3 cards -->
                 <div class="container">
                     <div class="row">
                         <div class="col-4">
                             <div class="card">
-                                <img src="https://picsum.photos/800/600"
-                                     class="card-img-top"
+                                <div class="card-header">Card Header</div>
+                                <img src="https://picsum.photos/800/600" alt="" class="card-img-top"/>
+                                <div class="card-body">Lorem ipsum dolor sit amet.</div>
+                                <div class="card-footer text-muted">2 days ago</div>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="https://picsum.photos/400/300"
+                                     class="card-img"
                                      alt="..."/>
                                 <div class="card-body">
-                                    <h5 class="card-title">Card Title</h5>
+                                    <h5 class="card-title">Top Image</h5>
                                     <p class="card-text">
                                         Here is text, which contains symbols from the alphabet, commas and spacing characters, as well as a dot after this sentence.
                                     </p>
-                                    <nav class="nav">
-                                        <a class="btn btn-primary" data-bs-toggle="tab" data-bs-target="#dokumente" href="#">Dokumente</a>
-                                    </nav>
                                 </div>
                             </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="card">
+                                <img src="https://picsum.photos/400/300" class="card-img-top" alt="..."/>
+                                <div class="card-body">
+                                    <h5 class="card-title">Card</h5>
+                                    <p class="card-text">
+                                        Here is text, which contains symbols from the alphabet, commas and spacing characters, as well as a dot after this sentence.
+                                    </p>
+                                </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">An item</li>
+                                    <li class="list-group-item">A second item</li>
+                                    <li class="list-group-item">A third item</li>
+                                </ul>
 
+                                <div class="card-body">
+                                    <p class="card-text">
+                                        Another text containing symbols and what not. Also a link.
+                                    </p>
+                                    <a href="op-monitorTAB.html" class="card-link">Link to OP-Monitor.</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
+                    <!-- card horizontal -->
                     <div class="row">
-                        <div class="card w-50">
-                            <img src="https://picsum.photos/600/400"
-                                 class="card-img-top"
-                                 alt="..."/>
-                            <div class="card-body">
-                                <h5 class="card-title">Card Title</h5>
-                                <p class="card-text">
-                                    Here is text, which contains symbols from the alphabet, commas and spacing characters, as well as a dot after this sentence.
-                                </p>
-                                <nav class="nav">
-                                    <a class="btn btn-primary" data-bs-toggle="tab" data-bs-target="#dokumente" href="#">Dokumente</a>
-                                </nav>
+                        <div class="col">
+                            <div class="card text-white bg-primary mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://picsum.photos/200/300" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card text-dark bg-info mb-3" style="max-width: 540px;">
+                                <div class="row g-0">
+                                    <div class="col-md-4">
+                                        <img src="https://picsum.photos/200/300" class="img-fluid rounded-start" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card group -->
+                        <div class="row">
+                            <div class="card-group">
+                                <div class="card">
+                                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <img src="https://picsum.photos/200/300" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <small class="text-muted">Last updated 3 mins ago</small>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

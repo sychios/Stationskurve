@@ -1,0 +1,7 @@
+Stationskurve Color Scheme:
+
+e63946 - Red (Pantone)
+f1faee - White (Honeydew)
+a8dadc - Light Blue (Non photo blue)
+457b9d - Blue (Cerulean)
+1d3557 - Dark Blue (Berkeley Blue)

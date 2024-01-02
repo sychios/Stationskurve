@@ -6,10 +6,8 @@ import jakarta.persistence.*;
 public class User {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
-    @Column(name="user_id")
     private Integer id;
 
-    @Column(name="user_name")
     private String name;
 
     public Integer getId(){

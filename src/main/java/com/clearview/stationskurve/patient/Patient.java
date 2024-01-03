@@ -2,37 +2,32 @@ package com.clearview.stationskurve.patient;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
+@Data
 @Entity
 public class Patient {
+    @Setter
     @Id
     private Integer id;
 
+    @Setter
     private String name;
 
+    @Setter
     private String vorname;
 
-    public Integer getId(){
-        return this.id;
-    }
+    @Setter
+    private java.sql.Date geburtstag;
 
-    public void setId(Integer id){
-        this.id = id;
-    }
+    @Setter
+    private Integer zimmer;
 
-    public String getName(){
-        return this.name;
-    }
+    @Setter
+    private java.sql.Timestamp aufnahme;
 
-    public void setName(String name){
-        this.name = name;
-    }
-
-    public String getVorname(){
-        return this.vorname;
-    }
-
-    public void setVorname(String vorname){
-        this.vorname = vorname;
-    }
+    @Setter
+    private boolean septisch;
 }

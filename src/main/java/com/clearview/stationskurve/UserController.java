@@ -26,4 +26,9 @@ public class UserController {
         return userRepository.findAll();
     }
 
+    @PostMapping(path="/userById")
+    public @ResponseBody User getUserById(@RequestParam Integer userId){
+        return userRepository.findById(userId).orElse(null);
+    }
+
 }

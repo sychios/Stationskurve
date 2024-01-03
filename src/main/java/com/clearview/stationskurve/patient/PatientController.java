@@ -13,6 +13,15 @@ public class PatientController {
     @Autowired
     private PatientRepository patientRepository;
 
+    // @Responsebody: returned value is the response, not a view name
+    @PostMapping(path="/addPatient")
+    public @ResponseBody String addPatient(@RequestParam Integer id){
+        Patient p = new Patient();
+        p.setId(id);
+        patientRepository.save(p);
+        return "Saved.";
+    }
+
     @GetMapping(path="/allPatients")
     public @ResponseBody Iterable<Patient> getAllPatients(){
         return patientRepository.findAll();

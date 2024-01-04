@@ -1,5 +1,7 @@
 <!doctype html>
-<html lang="en">
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+>
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -334,6 +336,7 @@
                     </div>
                 </div>
 
+                <!-- Table -->
                 <div class="container mt-2">
                     <table class="table table-striped table-hover">
                         <thead>
@@ -395,6 +398,47 @@
                             </tr>
                         </tbody>
                     </table>
+                </div>
+
+                <!-- Injection Table Aim-->
+                <div class="container mt-2">
+                    <table class="table table-striped table-hover">
+                        <thead>
+                        <tr>
+                            <th scope="col">Patienten-ID</th>
+                            <th scope="col">Station</th>
+                            <th scope="col">Vorname</th>
+                            <th scope="col">Nachname</th>
+                            <th scope="col">Alter</th>
+                            <th scope="col">Zimmer</th>
+                            <th scope="col">Septisch</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>2</td>
+                            <td>Peter</td>
+                            <td>Pan</td>
+                            <td>19</td>
+                            <td>21</td>
+                            <td>Negativ</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>2</td>
+                            <td>Bodo</td>
+                            <td>Bach</td>
+                            <td>33</td>
+                            <td>20</td>
+                            <td class="table-danger">Positiv</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!-- HTMX Injection Table-->
+                <div class="container mt-2" id="patientsTable" hx-trigger="load" hx-get="/patients/populatePatientTable">
+                    To be Replaced!
                 </div>
             </div>
         </div>

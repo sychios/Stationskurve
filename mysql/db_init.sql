@@ -1,6 +1,6 @@
-create table patienten(
-	id tinyint unsigned auto_increment, name varchar(255) not null, vorname varchar(255) not null, geburtstag date not null,
-    zimmer tinyint, aufnahme datetime not null, entlassung datetime,
-    septisch bool not null, diagnose varchar(255) not null, beschwerden varchar(255),
-    größe tinyint unsigned, gewicht tinyint unsigned,
+create table patient(
+	id tinyint unsigned auto_increment, surname varchar(255) not null, first_name varchar(255) not null, date_of_birth date not null,
+    room tinyint, admission datetime not null, dismissal datetime,
+    septic bool not null, diagnosis varchar(255) not null, symptoms varchar(255),
+    height tinyint unsigned, weight tinyint unsigned,
     primary key(id));

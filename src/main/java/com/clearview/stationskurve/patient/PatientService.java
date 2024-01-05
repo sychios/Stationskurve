@@ -30,7 +30,7 @@ public class PatientService {
     public Iterable<Patient> getSepticPatients(){
         return ((List<Patient>) patientRepository.findAll())
                 .stream()
-                .filter(patient -> patient.isSeptisch())
+                .filter(patient -> patient.isSeptic())
                 .toList();
     }
 

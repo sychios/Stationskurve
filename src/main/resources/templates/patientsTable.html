@@ -8,12 +8,28 @@
     <tr>
         <th scope="col">Nachname</th>
         <th scope="col">Vorname</th>
+        <th scope="col">Geburtstag</th>
+        <th scope="col">Zimmer</th>
+        <th scope="col">Diagnose</th>
+        <th scope="col">Septisch</th>
+        <th scope="col">Größe</th>
+        <th scope="col">Gewicht</th>
+        <th scope="col">Aufnahme</th>
+        <th scope="col">Entlassung</th>
     </tr>
     </thead>
     <tbody>
     <tr th:each="patient : ${patients}">
-        <td th:text="${patient.name}"></td>
-        <td th:text="${patient.vorname}"></td>
+        <td th:text="${patient.surname}"></td>
+        <td th:text="${patient.first_name}"></td>
+        <td th:text="${patient.date_of_birth}"></td>
+        <td th:text="${patient.room}"></td>
+        <td th:text="${patient.diagnosis}"></td>
+        <td th:text="${patient.septic}"></td>
+        <td th:text="${patient.height}"></td>
+        <td th:text="${patient.weight}"></td>
+        <td th:text="${patient.admission}"></td>
+        <td th:text="${patient.dismissal}"></td>
     </tr>
     </tbody>
 </table>
